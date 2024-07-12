@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring HTML Forms</title>
+</head>
+<body>
+    <h1>Exploring Various HTML Forms</h1>
+
+    <form>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" 
+            pattern="[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}"
+            placeholder="Enter your email" aria-label="Enter your email" required>
+        <br><br>
+
+        <button type="submit" aria-label="Submit Form">Submit</button>
+        <br><br>
+
+        <label for="quantity">Quantity:</label>
+        <br>
+        <input type="number" id="quantity" name="quantity" 
+            min="1" max="10" step="1" 
+            placeholder="Qnty" aria-label="Quantity" required>
+        <br><br>
+
+        <label for="date">Date:</label>
+        <br>
+        <input type="date" id="date" name="date" 
+            placeholder="Enter Date" aria-label="Enter Date" required>
+        <br><br>
+
+        <label for="rating">Rating:</label>
+        <br>
+        <input type="range" id="rating" name="rating" 
+            min="1" max="5" step="1" 
+            placeholder="Rating" aria-label="Rating" required>
+        <br><br>
+
+        <label for="color">Color:</label>
+        <br>
+        <input type="color" id="color" name="color" value="#ff0000"
+            placeholder="Enter Color" aria-label="Enter a color" required>
+        <br><br>
+
+        <label for="programing language">Favorite Programing Language:</label>
+        <br>
+        <select id="programing language" name="programing language" required>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+        <br><br>
+
+        <label for="expertise">Level of Expertise:</label>
+        <br>
+        <input type="radio" id="beginner" name="expertise" value="beginner">
+        <label for="beginner">Beginner</label>
+        <br>
+        <input type="radio" id="intermediate" name="expertise" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <br>
+        <input type="radio" id="advanced" name="expertise" value="advanced">
+        <label for="advanced">Advanced</label>
+        <br><br>
+
+        <label for="development">Preferred development platform:</label>
+        <br>
+        <input type="checkbox" id="web" name="development" value="web">
+        <label for="web">Web</label>
+        <br>
+        <input type="checkbox" id="mobile" name="development" value="mobile">
+        <label for="mobile">Mobile</label>
+        <br>
+        <input type="checkbox" id="desktop" name="development" value="desktop">
+        <label for="desktop">Desktop</label>
+        <br><br>
+
+
+
+    </form>
+    
+</body>
+</html>
